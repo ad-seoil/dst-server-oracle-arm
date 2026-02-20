@@ -1,0 +1,25 @@
+# 1. Linux System Files (Security)
+.*
+!/.gitignore
+.cache/
+.ssh/
+
+# 2. DST Game Binaries & Data
+dst-data/
+dst-cluster/ugc/
+dst-cluster/DoNotStarveTogether/Cluster_1/save/
+dst-cluster/DoNotStarveTogether/Cluster_1/Caves/save/
+dst-cluster/DoNotStarveTogether/Cluster_1/Master/save/
+
+# 3. Sensitive Info & Logs
+**/cluster_token.txt
+**/adminlist.txt
+**/whitelist.txt
+**/blocklist.txt
+*.log
+*.txt
+*.ini
+!dedicated_server_mods_setup.lua
+
+# 4. OS Files
+.DS_Store

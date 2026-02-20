@@ -1,0 +1,13 @@
+version: '3'
+services:
+  dst:
+    image: jamesits/dst-server:latest
+    ports:
+      - "10999:10999/udp"
+      - "11000:11000/udp"
+    # environment:
+    # - DST_CLUSTER_NAME=GCP_DST_Server
+    volumes:
+      - ./dst-data:/opt/dst_server
+      - ./dst-cluster:/data
+    restart: always
