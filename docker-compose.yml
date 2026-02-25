@@ -2,6 +2,8 @@ version: '3'
 services:
   dst:
     image: jamesits/dst-server:latest
+    # command: ["sleep", "infinity"]
+    # entrypoint: ["/bin/bash", "-c", "steamcmd +runscript /opt/dst_server/update.txt && /usr/local/bin/entrypoint.sh"]
     ports:
       - "10999:10999/udp"
       - "11000:11000/udp"
